@@ -1,0 +1,481 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+header .logo h1 {
+  font-size: 28px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+header .icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f1;
+}
+
+header nav ul li a:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #ecf0f1;
+}
+
+/* Main Section */
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  width: 75%;
+}
+
+.product {
+  position: relative;
+  width: calc(33.333% - 20px); /* Ajusta para que 3 productos quepan por fila */
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.product:hover img {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen al 105% */
+}
+
+.discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.product h4 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Estilo del banner de imagen */
+.banner {
+  width: 100%;
+  height: 300px; /* Ajusta la altura según necesites */
+  background-color: #040404; /* Fondo claro para cuando la imagen no cargue */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el área sin distorsionarse */
+}
+
+/* Footer general */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ff7f50;
+  text-decoration: underline;
+}
+
+/* Suscripción */
+.subscribe-section .email-input,
+.subscribe-section .birthday-select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-section .subscribe-btn {
+  background-color: #ff7f50;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.subscribe-section .subscribe-btn:hover {
+  background-color: #ffa07a;
+}
+
+/* Links */
+.links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-column li {
+  margin-bottom: 8px;
+}
+
+/* Contacto */
+.contact-section p a {
+  color: #ff7f50;
+}
+
+.redes-sociales {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos */
+  justify-content: center; /* Centra los íconos */
+}
+
+.redes-sociales a {
+  font-size: 2rem; /* Tamaño de los íconos */
+  color: #fcf5f5; /* Color predeterminado (negro) */
+  text-decoration: none; /* Elimina el subrayado */
+  transition: color 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.redes-sociales a:hover {
+  color: #ff4500; /* Cambia el color al pasar el cursor */
+}
+
+
+/* Derechos reservados */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+.footer {
+  position: relative; /* Asegura que los elementos dentro de este contenedor estén posicionados con respecto a él */
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+/* Tu CSS actual... */
+
+/* Footer general */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sección Suscripción */
+.footer-section.subscribe-section {
+  margin-bottom: 30px; /* Espacio entre la sección de suscripción y la siguiente */
+}
+
+/* Sección Tiendas y Políticas */
+.footer-section.links-section {
+  margin-bottom: 30px; /* Espacio entre la sección de tiendas/políticas y la siguiente */
+}
+
+/* Sección Contacto y Conócenos */
+.footer-section.contact-section {
+  margin-bottom: 30px; /* Espacio entre la sección de contacto y la siguiente */
+}
+
+/* Sección Redes Sociales */
+.redes-sociales {
+  margin-bottom: 30px; /* Espacio entre la sección de redes sociales y el pie de página */
+}
+
+/* Derechos reservados */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+/* Sección Suscripción */
+.footer-section.subscribe-section {
+  margin-bottom: 40px; /* Espacio entre la sección de suscripción y la siguiente */
+}
+
+/* Sección Tiendas y Políticas */
+.footer-section.links-section {
+  margin-bottom: 40px; /* Espacio entre la sección de tiendas/políticas y la siguiente */
+}
+
+/* Sección Contacto */
+.footer-section.contact-section {
+  margin-bottom: 40px; /* Espacio entre la sección de contacto y la siguiente */
+}
+
+/* Sección Redes Sociales */
+.redes-sociales {
+  margin-bottom: 40px; /* Espacio entre la sección de redes sociales y el pie de página */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacio entre los íconos */
+}
+
+
+/* Derechos reservados */
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px; /* Disminuye este valor para subir más el texto */
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 5px; /* Ajusta este valor si necesitas menos espacio superior */
+  position: relative;
+}
+
+
+/* Asegura que las secciones del footer estén en una sola fila y distribuidas */
+.footer .container {
+  display: flex;
+  justify-content: space-between; /* Esto asegura que haya espacio entre las secciones */
+  align-items: flex-start; /* Alinea las secciones a la parte superior */
+  gap: 20px; /* Espacio entre las secciones */
+  max-width: 1200px;
+  margin: 0 auto; /* Centra el contenido */
+}
+
+.footer-section {
+  flex: 1; /* Hace que todas las secciones ocupen el mismo espacio */
+  min-width: 220px; /* Ajusta el ancho mínimo de cada sección */
+  padding: 10px; /* Añade algo de espacio dentro de cada sección */
+}
+
+/* Ajusta el tamaño de los textos si es necesario */
+.footer-section h3, .footer-section h4 {
+  font-size: 16px; /* Ajusta el tamaño de las cabeceras */
+}
+
+/* Hacer que las secciones del pie de página se vean bien distribuidas */
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* Links */
+.links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-column li {
+  margin-bottom: 10px;
+}
+
+.contact-section p a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+/* Botón de suscripción */
+.subscribe-section .subscribe-btn {
+  background-color: #ff7f50;
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.subscribe-section .subscribe-btn:hover {
+  background-color: #ffa07a;
+}
+
+
+
+/* Estilo del chatbox flotante */
+#whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* Fondo transparente */
+  padding: 0;
+  border-radius: 50%; /* Hace el borde redondeado para el ícono */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Estilo del botón de WhatsApp */
+#whatsapp-btn {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  padding: 0; /* Sin relleno */
+  border-radius: 50%; /* Bordes redondeados */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo para el ícono de WhatsApp */
+#whatsapp-btn img {
+  width: 40px; /* Tamaño del ícono */
+  height: 40px;
+}
+
+/* Efecto de hover (cuando el usuario pasa el cursor sobre el ícono) */
+#whatsapp-btn:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* Efecto de click (cuando el usuario hace clic en el ícono) */
+#whatsapp-btn:active {
+  transform: scale(0.95); /* Hace que el botón se haga un poco más pequeño */
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Cambiado a blanco como el botón de suscripción */
+  padding: 12px 16px; /* Espaciado similar al botón */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #ff7f50; /* Color de fondo del botón de suscripción */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+header nav ul li a:hover {
+  background-color: #ffa07a; /* Color de fondo al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+}
+
+header nav ul li a:active {
+  transform: scale(0.95); /* Efecto de clic */
+}
